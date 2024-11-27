@@ -1,3 +1,4 @@
+import React from "react"; // Import React for JSX support
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 
@@ -9,7 +10,6 @@ test("renders without errors", () => {
 
 test("renders the correct child components", () => {
   const { container } = render(<App />);
-
 
   screen.debug();
 
